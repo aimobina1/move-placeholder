@@ -38,7 +38,10 @@ body{
     padding: 10px 0;
     margin-bottom:30px;
 }
+.box label{
+    font-size:15px;
 
+}
 .box textarea{
     height: 80px;
     padding: 10px;
@@ -53,7 +56,7 @@ body{
     border-bottom: solid 1px var(--primary-color);
 }
 .box textarea{
-    margin-bottom: 20px;
+    margin-bottom:-15px;
 }
 
 .box button{
@@ -67,4 +70,23 @@ body{
     border: #051420;
 }
 
+.box form div label{
+    position:relative;
+    bottom:60px;
+    margin-left: 10px;
+    left: 0;
+    color:rgb(66, 66, 66);
+    transition: .5s;
+    pointer-events: none;
+}
 
+.box input:focus ~ label, 
+.box textarea:focus ~ label, 
+.box input:valid ~ label, 
+.box textarea:valid ~ label{
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    bottom:92px;
+    color: var(--primary-color);
+}
