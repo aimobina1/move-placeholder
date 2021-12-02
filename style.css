@@ -97,3 +97,14 @@ body{
 .box textarea:valid{
     border-bottom: solid 1px var(--primary-color);
 }
+
+/* mobile responsive */
+@media (max-width: 500px) {
+
+    .box{
+        max-width: 350px;
+    }
+    input , textarea{
+        width: 90%;
+    }
+}
