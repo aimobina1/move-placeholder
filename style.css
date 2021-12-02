@@ -53,7 +53,7 @@ body{
     box-sizing: border-box;
     outline: none;
     border: none;
-    border-bottom: solid 1px var(--primary-color);
+    border-bottom: solid 1px var(--dark-color);
 }
 .box textarea{
     margin-bottom:-15px;
@@ -89,4 +89,11 @@ body{
     font-weight: bold;
     bottom:92px;
     color: var(--primary-color);
+}
+
+.box input:focus, 
+.box textarea:focus, 
+.box input:valid , 
+.box textarea:valid{
+    border-bottom: solid 1px var(--primary-color);
 }
